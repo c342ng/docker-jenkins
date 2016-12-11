@@ -3,5 +3,5 @@ services:
   jenkins:
     image: registry.cn-hangzhou.aliyuncs.com/c3t3m3/docker-jenkins:aliyun
     ports:
-      - "7002:8080"
+      - "8080:8080"
       - "70000:50000"
