@@ -15,6 +15,10 @@ services:
     image: registry.cn-hangzhou.aliyuncs.com/c3t3m3/docker-jk-slave-go1.7:aliyun
     networks:
       - jknet
+  jk-jdk7-maven:
+    image: registry.cn-hangzhou.aliyuncs.com/c3t3m3/docker-jk-slave-jdk7-mvn:aliyun
+    networks:
+      - jknet
 networks:
   jknet:
     driver: bridge
