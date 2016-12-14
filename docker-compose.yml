@@ -12,7 +12,7 @@ services:
     networks:
       - jknet
   jk-slave-go1_7:
-    image: registry.cn-hangzhou.aliyuncs.com/c3t3m3/docker-jk-slave-go1.7
+    image: registry.cn-hangzhou.aliyuncs.com/c3t3m3/docker-jk-slave-go1.7:aliyun
     networks:
       - jknet
 networks:
