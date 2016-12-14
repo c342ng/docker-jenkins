@@ -9,6 +9,7 @@ services:
       - "./jenkins_home/:/var/jenkins_home:rw"
     links:
       - jk-slave-go1_7
+      - jk-jdk7-maven
     networks:
       - jknet
   jk-slave-go1_7:
