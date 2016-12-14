@@ -7,3 +7,14 @@ services:
       - "50000:50000"
     volumes:
       - "./jenkins_home/:/var/jenkins_home:rw"
+    links:
+      - jk-slave-go1_7
+    networks:
+      - jknet
+  jk-slave-go1_7:
+    image: registry.cn-hangzhou.aliyuncs.com/c3t3m3/docker-jk-slave-go1.7
+    networks:
+      - jknet
+networks:
+  jknet:
+    driver: bridge
